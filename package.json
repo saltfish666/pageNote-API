@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start ./lib/pageNote.js"
+    "start": "pm2 start ./pageNote.js",
+    "restart": "pm2 restart ./pageNote.js"
   },
   "author": "",
   "license": "ISC",
