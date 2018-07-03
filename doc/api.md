@@ -1,6 +1,6 @@
 Basic Auth:
     header {
-        token:token
+        Authorization:token /TOKEN/
     }
 
 GET /user
