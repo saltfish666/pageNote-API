@@ -6,6 +6,8 @@
   "scripts": {
     "start": "pm2 start ./pageNote.js -n note",
     "restart": "pm2 restart note",
+    "fix": "eslint --fix .",
+    "test": "eslint .",
     "initcz": "commitizen init cz-conventional-changelog --save --save-exact"
   },
   "author": "",
@@ -17,6 +19,12 @@
     "request": "^2.87.0"
   },
   "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
     "commitizen": "^2.10.1",
     "cz-conventional-changelog": "^2.1.0"
   },
