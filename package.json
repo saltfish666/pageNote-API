@@ -6,6 +6,7 @@
   "scripts": {
     "start": "pm2 start ./pageNote.js -n note",
     "restart": "pm2 restart note",
+    "dev": "nodemon ./pageNote.js",
     "fix": "eslint --fix .",
     "test": "eslint .",
     "initcz": "commitizen init cz-conventional-changelog --save --save-exact"
