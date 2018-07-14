@@ -1,10 +1,11 @@
 FROM node:9.11.2-alpine
 COPY ./lib/ /app/lib/
 COPY ./package.json /app/package.json
+COPY ./index.js /app/index.js
 WORKDIR /app
 RUN npm install
 EXPOSE 8072
-CMD node ./pageNote.js
+CMD node ./index.js
 
 # docker build -t=note .
 # docker run -d --rm --name=pagenote -p=8088:8072 note
