@@ -2,6 +2,7 @@ FROM node:9.11.2-alpine
 COPY ./lib/ /app/lib/
 COPY ./package.json /app/package.json
 WORKDIR /app
+RUN npm install
 EXPOSE 8072
 CMD node ./pageNote.js
 
