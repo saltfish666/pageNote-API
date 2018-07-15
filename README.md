@@ -21,7 +21,7 @@ node:
 
  If you are using docker, run it likes this:
 ```
-docker run -d --rm --name=pagenote -p=8072:8072 --env=$mongoURL saltfish666/pagenote-api
+docker run -d --rm --name=pagenote -p=8072:8072 -e mongoURL=$mongoURL saltfish666/pagenote-api
 
 ```
 
