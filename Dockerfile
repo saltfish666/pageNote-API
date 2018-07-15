@@ -7,8 +7,9 @@ RUN npm install
 EXPOSE 8072
 CMD node ./index.js
 
-# docker build -t=note .
-# docker run -d --rm --name=pagenote -p=8088:8072 note
+# GET image:  docker build -t=note .  or  docker pull saltfish666/pagenote-api
+# set mongoURL as shell env youself
+# docker run -d --rm --name=pagenote -p=8072:8072 --env=$mongoURL note
 
 # Linux version 4.9.87-linuxkit-aufs (root@95fa5ec30613) (gcc version 6.4.0 (Alpine 6.4.0) )
 # node v9.11.2
