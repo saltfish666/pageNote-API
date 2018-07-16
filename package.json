@@ -10,6 +10,7 @@
     "fix": "eslint --fix .",
     "eslint": "eslint .",
     "test": "mocha test/",
+    "cover": "istanbul cover _mocha",
     "initcz": "commitizen init cz-conventional-changelog --save --save-exact"
   },
   "author": "",

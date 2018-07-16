@@ -9,13 +9,20 @@ os:
 
 sudo: required
 
+brancher:
+  only:
+    - "dev"
+    - "master"
+
 before_install:
   - npm rm --save-dev pre-commit
   - npm rm --save-dev commitizen cz-conventional-changelog
 
 install:
   - npm install
-  # - npm install -g codecov
+  - npm install -g codecov
 
 script:
   - npm test
+  - npm run cover
+  - codecov
