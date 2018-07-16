@@ -8,7 +8,8 @@
     "restart": "pm2 restart note",
     "dev": "nodemon ./pageNote.js",
     "fix": "eslint --fix .",
-    "test": "eslint .",
+    "eslint": "eslint .",
+    "test": "mocha test/",
     "initcz": "commitizen init cz-conventional-changelog --save --save-exact"
   },
   "author": "",
@@ -20,15 +21,20 @@
     "request": "^2.87.0"
   },
   "devDependencies": {
+    "commitizen": "^2.10.1",
+    "cz-conventional-changelog": "^2.1.0",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0",
-    "commitizen": "^2.10.1",
-    "cz-conventional-changelog": "^2.1.0"
+    "istanbul": "^0.4.5",
+    "mocha": "^3.0.0",
+    "pre-commit": "^1.2.2"
   },
+  "pre-commit":[
+  ],
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
